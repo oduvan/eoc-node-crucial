@@ -1,0 +1,28 @@
+def most_crucial(a, b):
+    # your code here
+    return None
+
+
+if __name__ == '__main__':
+    print("Example:")
+    print(most_crucial([['A', 'B'], ['B', 'C']],
+ {'A': 10, 'B': 10, 'C': 10}))
+
+    # These "asserts" are used for self-checking and not for an auto-testing
+    assert most_crucial([['A', 'B'], ['B', 'C']],
+ {'A': 10, 'B': 10, 'C': 10}) == ['B']
+    assert most_crucial([['A', 'B']], {'A': 20, 'B': 10}) == ['A']
+    assert most_crucial([['A', 'B'],
+  ['A', 'C'],
+  ['A', 'D'],
+  ['A', 'E']],
+ {'A': 0,
+  'B': 10,
+  'C': 10,
+  'D': 10,
+  'E': 10}) == ['A']
+    assert most_crucial([['A', 'B'], ['B', 'C'], ['C', 'D']],
+ {'A': 100, 'B': 1, 'C': 97, 'D': 1}) == ['A']
+    assert most_crucial([['A', 'B'], ['B', 'C'], ['C', 'D']],
+ {'A': 10, 'B': 20, 'C': 10, 'D': 20}) == ['B']
+    print("Coding complete? Click 'Check' to earn cool rewards!")
