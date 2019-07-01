@@ -21,5 +21,9 @@ class Referee(RefereeRank):
 def cover(func, in_data):
     return sorted(func(*in_data))
 
-'''
+''',
+        ENV_NAME.JS_NODE: '''
+function cover(func, in_data){
+    return func.apply(in_data).sort()
+}'''
     }
